@@ -10,15 +10,20 @@
     font-weight:700;
     font-style: normal;
    } */
+
   html{
+    height: 100%;
     font-size: 15px;
   }
    *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
   }
+  
   body{
+    height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight:400;
     padding: 0;
@@ -27,20 +32,24 @@
     color: #000000;
   }
   h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .fullwrap{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   .header{
-    /* height: 100vh; */
+    min-height: 100vh;
     background-image: url(../images/football_767.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-top: 33px;
-    padding-bottom: 84px;
+    padding-top: 5.8vh;
     color: #ffffff;
     
   }
@@ -55,13 +64,15 @@
     opacity:0.9;
   } 
   .container{
-    max-width: 640px;
     position: relative;
     box-sizing: border-box;
     z-index: 2;
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+  }
+  img{
+    display: block;
   }
   /* ЛОГОТИП */
   .logo{
@@ -69,64 +80,41 @@
     justify-content: center;
   }
   .logo_icon_text{
-    width: 133px;
-    height: 36px;
+    width: 41.56vw;
+    height: 6.34vh;
     fill: #ffffff;
-    margin: auto;
+    margin: 0 auto;
+    
   }
   /* 1 ЗАГОЛОВОК */
   .intro {
-    margin-top: 136px;
+    margin-top: 23.9vh;
   }
   .intro-title{
-    font-size: 28px;
+    font-size: 8.75vw;
+    line-height: normal;
+    letter-spacing: 1.4px; 
   }
-  .intro-title:nth-child(n+2){
-    margin-top: 30px;
-    margin-left: 45px; 
-  }
-  /* КНОПКИ */
-  /* .download_links{
-    margin-top: 88px;
-  }
-  .download_link{
-    background-color: #5e42b0;
-    text-transform: uppercase;
-    border-radius: 17.5px;
-  }
-  .download_link:nth-child(n+2){
-    margin-top: 15px;
-  }
-  .download_link_app{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .link_logo {
-    width: 19px;
-    height: 34px;
-    fill: #ffffff;
-  }
-  .link-text{
+  .intro-title-wrap{
     display: block;
-    font-size: 0.5333rem;
+    margin-left: 13.75vw; 
   }
-  .link-text:nth-child(odd){
-    font-weight: bold;
-  } */
-
-  /* новые кнопки */
   .download_links{
-    margin-top: 88px;
+    margin-top: 18.5vh;
   }
   .download_link {
+    width: 87.5vw;
+    height: 6.16vh;
     border-radius: 17.5px;
     text-transform: uppercase;
     background-color: #5e42b0;
   }
   .download_link:nth-child(n + 2) {
-    margin-top: 15px;
+    margin-top: 2.6vh;
+  }
+  .download_link:hover{
+    background-color: #5b35cc;
+    transition-duration: 1s;
   }
   .download_link_app {
     display: flex;
@@ -135,20 +123,22 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
+    padding-top: 0.5vh;    
   }
   .link_logo {
-    width: 20px;
-    height: 24px;
+    width: 6.25vw;
+    height: 4.23vh;
     fill: #ffffff;
   }
   .link_text{
     display: block;
-    font-size: 0.5333rem;
-    margin-left: 9px;
+    font-size: 2.5vw;
+    letter-spacing: 0.4px;
+    margin-left: 2.81vw;
   }
   .link_text:nth-child(n + 2) {
     font-weight: bold;
-    margin-top: -10px;
+    margin-top: -1.2vh;
   }
   
     
@@ -157,60 +147,76 @@
  h2, h3, h4, h5, h6{
     color: #e7e7e7;
   }
-  .athlet{
-    padding-top: 25px;
+  .athlet,
+  .player{
+    position: relative;
+    padding-top: 4.4vh;
   }
-  .athhlet-title{
-    padding-bottom: 19px;
+  .athhlet-title,
+  .player-title{
+    margin-bottom: 3.35vh;
   }
-  .athlet-title-text,.player-title-text{
-    font-size: 3.3333rem;
+  .athlet-title-text,
+  .player-title-text{
+    font-size: 15.63vw;
   }
   .athlet-footballer-image{
     display: flex;
     justify-content: center;
-    padding-bottom: 28px;
   }
   .footballer-image{
-    width: 192px;
-    height: 281px;
+    width: 60vw;
+    height: 49.47vh;
+  }
+  .features{
+    padding-bottom: 9.33vh;
+  }
+  .athlets .features:nth-child(2){
+    padding-top: 4.93vh;
   }
   .features:nth-child(3){
-    padding-top: 60px;
+    padding-top: 10.56vh;
     background-color: #f5f4f9;
   }
   .features:nth-child(4){
-    padding-top: 60px;
+    padding-top: 10.56vh;
     background-color: #5e42b0;
   }
+  
   .players .features:nth-child(4){
     background-color: #090c35;
   }
   .feature-wrapper{
     display: flex;
   }
+  .feature .feature-wrapper:nth-child(3){
+    background-color: red;
+    margin-top: 4.93vh;
+  }
   .numbering{
-    font-size: 0.9333rem;
+    font-size: 4.38vw;
     font-weight: bold;
+    box-sizing: border-box;
   }
   .numbering::after{
     content: "";
     display: block;
-    width: 15px;
-    height: 4px;
+    width: 5vw;
+    height: 0.7vh;
     border-radius: 1.5px;
+    margin-top: -0.53vh;
     background-color: #5e42b0;
   }
   .feature-description{
-    margin-left: 10px;
+    margin-left: 3.13vw;
   }
   .feature-title{
-    font-size: 1.5333rem;
+    font-size: 7.19vw;
     color: #c1c1c1;
   }
   .feature-description-text{
-    margin-top: 27px;
-    padding-bottom: 51px;
+    margin-top: 4.75vh;
+
   }
   .feature-text{
     line-height: 1.2;
@@ -229,28 +235,27 @@
   }
 
 
-  /* класыы для 2 секции */
-  .player{
-    padding-top: 21px;
-  }
-  .player-title{
-    padding-bottom: 21px;
-  }
+
 
   /* классы для 3 секции */
-  /* .active-bg-image{
-    background-size: cover;
-  } */
-  .active-bg{
-    background-image: url(../images/be-active_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 351px;
+  .feedback-article-wrapper{
+    display: flex;
+    flex-direction: column;
+  } 
+  .feedback-bg{
+    height: auto;
+    width: 100%;
   }
+  .active,
+  .contact,
+  .work{
+    margin-bottom: 13.2vh;
+  } 
   .number-square{
     width: 70px;
-    height: 70px;
-    margin-top: -58px;
+    height: 12.32vh;
+    margin-top: -10.21vh;
+    margin-left: 6.25vw;
     background-color: #5e42b0;
   }
   .number-square{
@@ -263,41 +268,27 @@
     opacity: 0.3;
     background-color: #ffffff;
   }
+  .feedback-description{
+    padding-top: 3.7vh;
+  }
   .feedback-title{
-    font-size: 1.8667rem;
-    margin-top: 21px;
+    font-size: 8.75vw;
   }
   .feedback-text{
-    font-size: 1.0667rem;
+    font-size: 5vw;
     line-height: 1.25;
-    margin-top: 21px;
-    margin-bottom: 77px;
-  }
-
-  /* contact */
-  .contact-bg{
-    background-image: url(../images/find-contact_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 351px;
-  }
-
-  /* work */
-  .work-bg{
-    background-image: url(../images/work-it_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 351px;
+    margin-top: 4.05vh;
   }
 
 /* footer */
   .footer{
+    min-height: 100vh;
     background-image: url(../images/game_767.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 10px;
+    padding-top: 17.43vh;
+    padding-bottom: 1.76vh;
     color: #ffffff;
       
     }
@@ -315,8 +306,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 72px;
-    height: 74px;
+    width: 22.5vw;
+    height: 13.03vh;
     margin: 0 auto;
     background: rgb(119,86,215);
     background: linear-gradient(180deg, rgba(119,86,215,1) 35%, rgba(80,55,154,1) 100%);
@@ -324,22 +315,466 @@
 }
 
   .footer-logo-svg{
-    width: 60px;
-    height: 50px;
+    width: 18.75vw;
+    height: 8.8vh;
     fill: #ffffff;
 }
   .footer-description{
-    margin-top: 60px;
+    margin-top: 10.39vh;
     text-align: center;
   }
   .footer-title{
-    font-size: 2.1333rem;
+    font-size: 10vw;
   }
   .footer-text{
-    font-size: 0.9333rem;
-    margin-top: 13px;
+    font-size: 4.38vw;
+    margin-top: 2.29vh;
     color: #9b8ec1;
   }
-  .footer .logo{
-    margin-top: 82px;;
+  .footer .download_links{
+    margin-top: 13.38vh;
   }
+  .footer .logo{
+    margin-top: 14.44vh;
+  }
+
+
+
+  /* width 641> */
+  @media (min-width:641px) and (max-width:960px){
+    .header{
+      padding-top: 4.17vh;
+    }
+    .container{
+      min-width: 641px;
+      max-width: 960px;
+      padding-left: 4.3vw;
+      padding-right: 4.3vw;
+    }
+      /* ЛОГОТИП */
+    .logo_icon_text{
+      width: 26.69vw;
+      height: 5.83vh;
+    }
+    /* 1 ЗАГОЛОВОК */
+    .intro {
+      margin-top: 18.85vh;
+    }
+    .intro-title{
+      font-size: 8.33vw;
+      letter-spacing: 3.2px;
+    }
+    .intro-title-wrap{
+      margin-left: 13.67vw;
+    }
+    /* кнопки */
+    .download_links{
+      display: flex;
+      justify-content: center;
+      margin-top: 32.5vh;
+    }
+    .download_link {
+      width: 40.49vw;
+      height: 8.02vh;
+      border-radius: 24px;
+      box-shadow: 8px 13.9px 24px 0 #0a0e34;
+    }
+    .download_link:nth-child(n + 2) {
+      margin-top: 0;
+      margin-left: 3.91vw;
+    }
+    .download_link_app {
+      padding-top: 2.08vh;
+    }
+    .link_logo {
+      width: 4.7vw;
+      height: 4.5vh;
+    }
+    .link_text{
+      font-size: 1.82vw;
+      margin-left: 1.17vw;
+    }
+    .link_text:nth-child(n + 2) {
+      margin-top: 0.05vh;
+    }
+    /* 2 блок */ 
+    .athlet,
+    .player{
+      padding-top: 8.85vh;
+    }
+    .athlet-footballer-image{
+      position: absolute;
+      top: 9.79vh;
+      left: -21.09vw;
+    }
+    .footballer-image{
+      width: 64.71vw;
+      height: 72.81vh;
+    }
+    .athhlet-title{
+      /* padding-left: 33.8%; */
+      margin-left: 33.85vw;
+      margin-bottom: 0;
+    }
+    .athlet-title-text,
+    .player-title-text{
+      font-size: 10.42vw;
+    }
+    .athlets .features:nth-child(2){
+      padding-top: 6.35vh;
+    }
+    .features{
+      padding-bottom: 3.85vh;
+    }
+    .features:nth-child(3){
+      padding-top: 4.58vh;
+    }
+    .features:nth-child(4){
+      padding-top: 4.58vh;
+    }
+    .athlets .feature{
+      padding-left: 33.85vw;
+      /* padding-left: 260px; */
+    }
+    .numbering{
+      font-size: 2.34vw;
+    }
+    .numbering::after{
+      width: 2.73vw;
+      height: 0.52vh;
+      margin-top: -0.25vh;
+      border-radius: 2px;
+    }
+    .feature-description{
+      margin-left: 1.3vw;
+    }
+    .feature-title{
+      font-size: 4.17vw;
+    }
+    .feature-description-text{
+      margin-top: 3.23vh;
+    }
+    .feature-text{
+      line-height: 1.75;
+      letter-spacing: 0.8px;
+    }
+
+
+
+    /* класыы для 2 секции */
+    .player-title{
+      padding-bottom: 61px;
+    } 
+    .player-basketballer-image{
+      position: absolute;
+      top: 4.06vh;
+      right: 0;
+    }
+    .basketballer-image{
+      width: 56.64vw;
+      height: 58.85vh;
+    }
+    .players .feature{
+      padding-right: 321px;
+    }
+
+    /* классы для 3 секции */
+
+    .active,
+    .contact,
+    .work{
+      margin-bottom: 10.83vh;
+    }
+    .number-square{
+      width: 15.1vw;
+      height: 12.08vh;
+      margin-top: -9.38vh;
+    }
+    .feedback-description{
+      padding-top: 5.63vh;
+    }
+    .feedback-title{
+      font-size: 10.42vw;
+    }
+    .feedback-text{
+      font-size: 3.13vw;
+      line-height: 1.17;
+      margin-top: 3.85vh;
+    }
+
+
+
+    /* footer */
+    .footer{
+      padding-top: 13.13vh;
+      padding-bottom: 2.5vh; 
+      }
+
+    .footer-logo-top{
+      width: 16.93vw;
+      height: 14.27vh;
+  }
+
+    .footer-logo-svg{
+      width: 13.67vw;
+      height: 9.06vh;
+  }
+    .footer-description{
+      margin-top: 8.54vh;
+    }
+    .footer-title{
+      font-size: 10.42vw;
+      letter-spacing: 2px;
+    }
+    .footer-text{
+      font-size: 4.69vw;
+      margin-top: 2.81vh;
+      line-height: 1.67;
+    }
+    .footer .download_links{
+      margin-top: 29.9vh;
+
+    }
+    .footer .logo{
+      margin-top: 5.73vh;
+    }
+  }
+
+
+
+  /* width 961> */
+  @media (min-width:961px){
+    .header{
+      padding-top: 4.6vh;
+    }
+    .container{
+      padding-right: 10.2vw;
+      padding-left: 10.2vw;
+      
+    }
+      /* ЛОГОТИП */
+    .logo_icon_text{
+      width: 9.9vw;
+      height: 5.42vh;
+    }
+    /* 1 ЗАГОЛОВОК */
+    .intro {
+      margin-top: 30.7vh;
+    }
+    .intro-title{
+      font-size: 4.7vw;
+      line-height: 1.11;
+    }
+    .intro-title-wrap{
+      float: right;
+    }
+    /* кнопки */
+    .download_links{
+      display: flex;
+      justify-content: center;
+      margin-top: 23.13vh;
+    }
+    .download_link {
+      width: 14vw;
+      height: 8vh;
+      border-radius: 24px;
+    }
+    .download_link:nth-child(n + 2) {
+      margin-top: 0;
+      margin-left: 2.61vw;
+    }
+    .download_link_app {
+      padding-top: 2.08vh;
+    }
+    .link_logo {
+      width: 1.92vw;
+      height: 5.1vh;
+    }
+    .link_text{
+      font-size: 0.715vw;
+      margin-left: 0.51vw;
+    }
+    .link_text:nth-child(n + 2) {
+      margin-top: 0.05vh;
+    }
+
+    .athlet,
+    .player{
+      position: relative;
+      padding-top: 11.98vh;
+    }
+    .athlets .athlet-content,
+    .athlets .feature{
+      margin-left: 50%;
+    }
+    .athlet-footballer-image{
+      position: absolute;
+      top: 2.81vh;
+      left: 17.82vw; 
+    }
+    .footballer-image{
+      width: 29.48vw;
+      height: 94.58vh;
+    }
+    .athhlet-title,
+    .player-title{
+      margin-bottom: 11.25vh;
+    }
+    .athlet-title-text, .player-title-text{
+      font-size: 4.08vw;
+    }
+    .features{
+      padding-bottom: 5.63vh
+    }
+    .features:nth-child(3),
+    .features:nth-child(4){
+      padding-top: 6.25vh;
+    }
+    .numbering{
+      font-size: 0.92vw;
+    }
+    .numbering::after{
+      width: 1.04vw;
+      height: 0.5vh;
+      border-radius: 1.5px;
+      margin-top: 0px;
+    }
+    .feature-description{
+      margin-left: 0.52vw;
+    }
+    .feature-title{
+      font-size: 1.88vw;
+    }
+    .feature-description-text{
+      width: 35.65vw;
+    }
+    .feature-text{
+      line-height: 1.2;
+    }
+    /* класыы для 2 секции */
+
+    .players .feature{
+      width: 50%;
+    }
+    .players .features:nth-child(3){
+      padding-bottom: 8.65vh;
+    }
+    .players .features:nth-child(3)  .feature-description-text{
+      margin-top: 4.06vh;
+    }
+    .player .container{
+      position: relative;
+    }
+    .player-basketballer-image{
+      position: absolute;
+      top: 2.5vh;
+      right: 6.51vw; 
+    }
+    .basketballer-image{
+      width: 51.61vw;
+      height: 88.59vh;
+    }
+    
+    /* классы для 3 секции */
+    .active,
+    .contact,
+    .work{
+      margin-bottom: 0;
+    }
+    .feedback .container{
+      padding-left: 6.56vw;
+      padding-right: 11.25vw;
+    }
+
+    .feedback-article-wrapper{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    } 
+    .contact .feedback-article-wrapper{
+      flex-direction: row-reverse;
+    }
+
+    .feedback-picture-wrapper,
+    .feedback-container-wrapper{
+      width: 50vw; 
+    }
+    .feedback-bg{
+      height: auto;
+      width: 100%;
+    }
+
+    .number-square{
+      position: absolute;
+      top: 21.98vh;
+      left: 45.63vw;
+      width: 8.75vw;
+      height: 16.15vh;
+      margin: 0; 
+    }
+    .feedback .numbering{
+      font-size: 1.25vw;
+    }
+    .feedback .numbering::after{
+      width: 1.41vw;
+      height: 0.52vh;
+      margin-top: 0.75vh
+    }
+    .feedback-description{
+      padding-top: 27.08vh;
+    }
+    .feedback-title{
+      font-size: 4.17vw;
+    }
+    .feedback-text{
+      font-size: 1.25vw;
+      line-height: 1.17;
+      letter-spacing: 1.2px;
+      margin-top: 11.67vh;
+    }
+    .feedback-text:nth-child(2){
+      margin-top: 7.81vh;
+    }
+
+    
+    /* footer */
+    .footer{
+      padding-top: 23.85vh;
+      padding-bottom: 5.42vh;
+      }
+    .footer-wrapper{
+      display: flex;
+      justify-content: center;
+    }
+    .footer-logo-top{
+      width: 6.77vw;
+      height: 14.27vh;
+      margin: 0;
+      border-radius: 30px;
+    }
+
+    .footer-logo-svg{
+      width: 5.47vw;
+      height: 9.06vh;
+    }
+    .footer-description{
+      margin-top: 4.08vh;
+      margin-left: 1.93vw;
+      text-align: left;
+    }
+    .footer-title{
+      font-size: 4.17vw;
+      letter-spacing: 4px;
+    }
+    .footer-text{
+      font-size: 1.56vw;
+      margin-top: 3.08vh;
+      line-height: 1.15 ;
+    }
+    .footer .download_links{
+      margin-top: 16.98vh;
+    }
+    .footer .logo{
+      margin-top: 27.29vh;
+    }
+      }
