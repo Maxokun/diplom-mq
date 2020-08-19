@@ -226,17 +226,20 @@
     margin-left: 3.13vw;
   }
   .feature-title{
-    font-size: 2.3rem;
+    /* font-size: 2.3rem; */
+    font-size: calc(2.009vw +16.571px);
     line-height: 34.49px;
     color: #c1c1c1;
   }
   .feature-description-text{
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-top: 4.75vh;
     line-height: 1.8rem;
 
   }
   .feature-text{
+    font-size: calc(0.223vw +14.286px);
+    /* font-size: 1.5rem; */
     line-height: 1.2;
   }
 
@@ -495,7 +498,7 @@
     } */ 
     .athlet-title{
       font-size: 8rem;
-      padding: 7.2rem 4rem 0 29rem;
+      padding: 7.2rem 4rem 0 38vw;
     }
     
 
@@ -808,6 +811,7 @@
     }
     .feature-title{
       font-size: 3.6rem;
+      line-height: 0.96;
       letter-spacing: 0.16rem;
     }
     .feature-description-text{
